@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  resources :users, only: [:show]
+  get '/', to: 'users#show'
+  # resources :users, only: [:show]
 end
